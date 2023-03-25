@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <!-- Link For Accordion -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- Link For Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        .carousel-item {
+            height: 500px;
+            width: 100vw;
+        }
+
+        .text {
+            position: relative;
+            left: 30px;
+            top: 20px;
+            width: 97%;
+        }
+
+        .accordion-item {
+            position: relative;
+            top: 30px;
+            left: 30px;
+            width: 97%;
+        }
+
+        .card_header {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: 50px;
+            margin: 20px;
+
+        }
+
+        .check_table {
+            position: relative;
+            top: 80px;
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Start -->
+
+        <!--    <input type="checkbox" id="check" name="" value="" class="inpc">
+            <label for="check" class="inpc2"> <i class="fa fa-bars"></i></label>
+          -->
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active danger" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary" href="#" style="color: 
+                    #0D6EFD;">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary" href="#" style="color: 
+                    #0D6EFD;">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary" href="#" style="color: 
+                    #0D6EFD;">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary" href="#" style="color: 
+                    #0D6EFD;">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-primary" type="submit" style="color: 
+                  #0D6EFD; background-color: white;" >Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="2282225395.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="663219.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="624e27fde335d49e2dd3c6b75c6027a3.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pexels-lukas-kloeppel-545964.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Forth slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <div class="text">
+        <h2>Text Title</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis ipsa nihil quos nostrum quidem pariatur
+            ipsam id, atque magni quod accusantium culpa saepe iusto illo voluptate dolor eos! Quod excepturi in amet
+            architecto itaque neque, eius repellendus perspiciatis maiores vel, nisi quibusdam quas necessitatibus
+            repudiandae voluptatibus iste vitae voluptatum cumque facilis similique. Maiores asperiores porro odio quasi
+            soluta sunt hic repudiandae tempore officia tempora magni temporibus deserunt optio nemo corporis, explicabo
+            impedit, molestias vitae, enim ipsum. Atque, delectus totam facere iure error quod sit minus! Distinctio
+            repellendus vel ea dolorem tenetur corporis voluptatum. Fuga nostrum rem qui, nisi suscipit, voluptatum
+            aspernatur numquam debitis officia soluta ducimus sed inventore consequuntur enim. Hic dolor obcaecati quo
+            dignissimos quis nesciunt illum provident distinctio!</p>
+
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                    <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                    <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
+                    being filled with some actual content.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the space to make it look, at least at first
+                    glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+        <!-- 1st item -->
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-footer">
+                Card header
+            </div>
+            <img src="Screenshot 2023-03-25 161203.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <a href="#" class="btn btn-primary" style="width: 9rem; margin: 15px;">Go somewhere</a>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">1st item</li>
+                <li class="list-group-item">2nd item</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+            <div class="card-footer">
+                Card footer
+            </div>
+        </div>
+        <!-- 2nd item -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-footer">
+                Card header
+            </div>
+            <img src="Screenshot 2023-03-25 161203.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <a href="#" class="btn btn-primary" style="width: 9rem; margin: 15px;">Go somewhere</a>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">1st item</li>
+                <li class="list-group-item">2nd item</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+            <div class="card-footer">
+                Card footer
+            </div>
+        </div>
+        <!-- 3rd item -->
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-footer">
+                Card header
+            </div>
+            <img src="Screenshot 2023-03-25 161203.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <a href="#" class="btn btn-primary" style="width: 9rem; margin: 15px;">Go somewhere</a>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">1st item</li>
+                <li class="list-group-item">2nd item</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+            <div class="card-footer">
+                Card footer
+            </div>
+        </div>
+
+        <!-- 4th item -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-footer">
+                Card header
+            </div>
+            <img src="Screenshot 2023-03-25 161203.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <a href="#" class="btn btn-primary" style="width: 9rem; margin: 15px;">Go somewhere</a>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">1st item</li>
+                <li class="list-group-item">2nd item</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+            <div class="card-footer">
+                Card footer
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Table Start -->
+
+    <table class="table table-bordered" style="position: relative; top: 60px; left: 20px; width: 97%; ">
+        <!-- Table head -->
+        <thead>
+            <tr>
+                <th>
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck1" unchecked>
+                        <label class="custom-control-label" for="tableDefaultCheck1"></label>
+                    </div>
+                </th>
+                <th>Title</th>
+                <th>Title</th>
+                <th>Title</th>
+                <th>Title</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <!-- Table head -->
+
+        <!-- Table body -->
+        <tbody>
+
+            <tr>
+                <th scope="row">
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" unchecked>
+                        <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                    </div>
+                </th>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grip-vertical" viewBox="0 0 16 16">
+                        <path
+                            d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>
+                    <a href="#" style="padding: 10px;">Publish</a>
+                    <a href="#" style="padding: 10px;">Edit</a>
+                    <a href="#" style="padding: 10px;">Delete</a>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" unchecked>
+                        <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                    </div>
+                </th>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grip-vertical" viewBox="0 0 16 16">
+                        <path
+                            d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>
+                    <a href="#" style="padding: 10px;">Publish</a>
+                    <a href="#" style="padding: 10px;">Edit</a>
+                    <a href="#" style="padding: 10px;">Delete</a>
+                </td>
+            </tr>
+
+
+            <tr>
+                <th scope="row">
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" unchecked>
+                        <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                    </div>
+                </th>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grip-vertical" viewBox="0 0 16 16">
+                        <path
+                            d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>
+                    <a href="#" style="padding: 10px;">Publish</a>
+                    <a href="#" style="padding: 10px;">Edit</a>
+                    <a href="#" style="padding: 10px;">Delete</a>
+                </td>
+            </tr>
+
+
+            <tr>
+                <th scope="row">
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" unchecked>
+                        <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                    </div>
+                </th>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grip-vertical" viewBox="0 0 16 16">
+                        <path
+                            d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>
+                    <a href="#" style="padding: 10px;">Publish</a>
+                    <a href="#" style="padding: 10px;">Edit</a>
+                    <a href="#" style="padding: 10px;">Delete</a>
+                </td>
+            </tr>
+
+
+            <tr>
+                <th scope="row">
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" unchecked>
+                        <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                    </div>
+                </th>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grip-vertical" viewBox="0 0 16 16">
+                        <path
+                            d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>
+                    <a href="#" style="padding: 10px;">Publish</a>
+                    <a href="#" style="padding: 10px;">Edit</a>
+                    <a href="#" style="padding: 10px;">Delete</a>
+                </td>
+            </tr>
+
+
+            <tr>
+                <th scope="row">
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" unchecked>
+                        <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                    </div>
+                </th>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grip-vertical" viewBox="0 0 16 16">
+                        <path
+                            d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>
+                    <a href="#" style="padding: 10px;">Publish</a>
+                    <a href="#" style="padding: 10px;">Edit</a>
+                    <a href="#" style="padding: 10px;">Delete</a>
+                </td>
+            </tr>
+
+
+            <tr>
+                <th scope="row">
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" unchecked>
+                        <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                    </div>
+                </th>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grip-vertical" viewBox="0 0 16 16">
+                        <path
+                            d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>
+                    <a href="#" style="padding: 10px;">Publish</a>
+                    <a href="#" style="padding: 10px;">Edit</a>
+                    <a href="#" style="padding: 10px;">Delete</a>
+                </td>
+            </tr>
+
+
+            <tr>
+                <th scope="row">
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" unchecked>
+                        <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                    </div>
+                </th>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grip-vertical" viewBox="0 0 16 16">
+                        <path
+                            d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>
+                    <a href="#" style="padding: 10px;">Publish</a>
+                    <a href="#" style="padding: 10px;">Edit</a>
+                    <a href="#" style="padding: 10px;">Delete</a>
+                </td>
+            </tr>
+
+
+            <tr>
+                <th scope="row">
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" unchecked>
+                        <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                    </div>
+                </th>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grip-vertical" viewBox="0 0 16 16">
+                        <path
+                            d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>
+                    <a href="#" style="padding: 10px;">Publish</a>
+                    <a href="#" style="padding: 10px;">Edit</a>
+                    <a href="#" style="padding: 10px;">Delete</a>
+                </td>
+            </tr>
+
+
+            <tr>
+                <th scope="row">
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" unchecked>
+                        <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                    </div>
+                </th>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grip-vertical" viewBox="0 0 16 16">
+                        <path
+                            d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>
+                    <a href="#" style="padding: 10px;">Publish</a>
+                    <a href="#" style="padding: 10px;">Edit</a>
+                    <a href="#" style="padding: 10px;">Delete</a>
+                </td>
+            </tr>
+
+
+            <tr>
+                <th scope="row">
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" unchecked>
+                        <label class="custom-control-label" for="tableDefaultCheck2"></label>
+                    </div>
+                </th>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grip-vertical" viewBox="0 0 16 16">
+                        <path
+                            d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>Text Line</td>
+                <td>
+                    <a href="#" style="padding: 10px;">Publish</a>
+                    <a href="#" style="padding: 10px;">Edit</a>
+                    <a href="#" style="padding: 10px;">Delete</a>
+                </td>
+            </tr>
+
+        </tbody>
+        <!-- Table body -->
+    </table>
+    <!-- Table End -->
+
+    <h2 style="position: relative; top: 60px; left: 30px;">Bootstrap Form</h2>
+
+    <div class="container-fluid" style="position: relative; top:80px;">
+        <form>
+            <div class="row mb-3">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Second Name"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email" />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      </div>
+      
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
